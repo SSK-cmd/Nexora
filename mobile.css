@@ -1,0 +1,19 @@
+@media (max-width: 900px) {
+  .nav nav.mobile-open {
+    display: flex;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    padding: 25px 22px;
+    background: rgba(23, 10, 20, .97);
+    color: #fff;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .nav.scrolled nav.mobile-open {
+    background: rgba(245, 245, 242, .98);
+    color: var(--ink);
+  }
+}
