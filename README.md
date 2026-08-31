@@ -1,6 +1,6 @@
-# Nexora
+# Nexora Nova
 
-Static marketing site for Nexora. No build step is required.
+Static marketing site for Nexora Nova. No build step is required.
 
 ## Preview locally
 
