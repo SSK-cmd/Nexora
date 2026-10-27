@@ -22,3 +22,25 @@ document.querySelector('.menu').addEventListener('click', function () {
   this.setAttribute('aria-expanded', String(!open));
   document.querySelector('.nav nav').classList.toggle('mobile-open', !open);
 });
+
+document.querySelectorAll('.film-player').forEach(player => {
+  const video = player.querySelector('video');
+  const playButton = player.querySelector('.film-play');
+  if (!video || !playButton) return;
+
+  // Keep native controls as the fallback when JavaScript is unavailable.
+  video.controls = false;
+  playButton.hidden = false;
+
+  playButton.addEventListener('click', async () => {
+    video.controls = true;
+    playButton.hidden = true;
+    video.focus({ preventScroll: true });
+    try {
+      await video.play();
+    } catch {
+      // Native controls remain available to retry or show a media error.
+      video.controls = true;
+    }
+  });
+});

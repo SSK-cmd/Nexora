@@ -14,7 +14,7 @@ Open `http://localhost:8080`.
 
 The 10-second Gemini-generated film appears at `smartpark.html#film`, linked from the homepage's SmartPark section. The original clip is preserved in `assets/smartpark-concept.mp4`, with an extracted opening frame in `assets/smartpark-concept-poster.jpg`.
 
-The player uses a subtle CSS colour treatment to match the plum and rose branding. It starts muted, plays only on request, and uses native playback, sound and fullscreen controls. `preload="none"` avoids downloading the clip before playback. The caption identifies it as an illustrative AI-generated concept rather than prototype footage.
+The player uses a subtle CSS colour treatment to match the plum and rose branding. Its thumbnail has a prominent, keyboard-accessible play button. Selecting it starts muted playback and reveals native playback, sound and fullscreen controls; native controls are also available without JavaScript. `preload="none"` avoids downloading the clip before playback. The caption identifies it as an illustrative AI-generated concept rather than prototype footage.
 
 ## Deploy
 
