@@ -27,3 +27,8 @@
 .film-link:focus-visible{outline:2px solid var(--soft);outline-offset:6px}
 @media(max-width:900px){.film-heading{grid-template-columns:1fr;gap:25px}.film-heading>p{max-width:520px}}
 @media(max-width:600px){.film-heading{margin-bottom:30px}.film-heading>p{font-size:15px}.film-player{border-radius:7px}.film-figure figcaption{flex-direction:column;gap:6px;font-size:10px}}
+.two-experiences .section-head{margin-bottom:30px}
+.section-summary{max-width:660px;color:#665d63;font-size:17px;line-height:1.7;margin:0 0 45px}
+.flow-label{color:var(--soft);font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px}
+.status-grid article>p{font-size:14px;line-height:1.7;color:#665d63;margin-bottom:25px}
+.status-grid article>p a{text-decoration:underline;text-underline-offset:3px;color:var(--plum)}
